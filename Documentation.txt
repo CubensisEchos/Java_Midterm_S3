@@ -1,0 +1,28 @@
+Application Purpose:
+  The purpose of this application is to porvide a mock system for a medical facility that can manage its doctors, patients, medications, and prescriptions. It can also manage stock through a restock function, and keep track of any medications that expire.
+
+Classes:
+  Person - A superclass that was made so patient and doctor can inherit its info
+
+  Patient - A subclass of person, that represents the patients. It stores a list of a patients medications and prescriptions, and allows prescriptions to be added to their history.
+
+  Doctor - A subclass of person, that represents the doctos. It incudes a specialization, which is unqiue to doctors, and maintains their list of patients( supports adding/editing/deleting).
+
+  Medication - A class that represents the medications, it contains an id, name, doise, quantity, and expiry datre for each medication and it is used for tracking inventory.
+
+  Prescription - A class that represents the precriptions. It contains id and date. It also automatically calculates expiry dates.
+
+  MedicationSystem - A class that is used to manage the system. It handles adding, editing, deleting, searching and printing reports for patients, doctors, medications, and prescriptions.
+
+  MedicationSystemDemo - A class thats purpose is to allow for the functions of the system to be shown.
+
+How to run/access
+
+  First get a copy of the repo on your PC with git clone
+    (ex: git clone https://github.com/CubensisEchos/Java_Midterm_S3.git)
+  Then navigate to the folder it is in
+    (ex: cd Java_Midterm_S3)
+  Then you can compile all the classes
+    (ex: javac *.java)
+  Finally you can run the program either by a command or hitting run in the demo class
+    (ex: java MedicationSystemDemo)
